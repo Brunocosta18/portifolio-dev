@@ -1,0 +1,51 @@
+html,
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+::selection {
+  background-color: rgb(34 211 238 / 0.25);
+  color: rgb(24 24 27);
+}
+
+html.dark ::selection {
+  color: rgb(244 244 245);
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(212 212 216) rgb(250 250 250);
+}
+
+html.dark body {
+  scrollbar-color: rgb(39 39 42) rgb(9 9 11);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(250 250 250);
+}
+
+html.dark body::-webkit-scrollbar-track {
+  background: rgb(9 9 11);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(212 212 216);
+  border-radius: 999px;
+}
+
+html.dark body::-webkit-scrollbar-thumb {
+  background: rgb(39 39 42);
+}
